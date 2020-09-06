@@ -14,6 +14,7 @@
 		AF4FE9462501473600C2062A /* SwiftUIListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE9452501473600C2062A /* SwiftUIListTests.swift */; };
 		AF4FE9512501473600C2062A /* SwiftUIListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE9502501473600C2062A /* SwiftUIListUITests.swift */; };
 		AF4FE95F2505824400C2062A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE95E2505824400C2062A /* Restaurant.swift */; };
+		AF4FE99A2505A6F200C2062A /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE9992505A6F200C2062A /* RestaurantDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AF4FE9502501473600C2062A /* SwiftUIListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListUITests.swift; sourceTree = "<group>"; };
 		AF4FE9522501473600C2062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4FE95E2505824400C2062A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		AF4FE9992505A6F200C2062A /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				AF4FE9332501473500C2062A /* SwiftUIListApp.swift */,
 				AF4FE9352501473500C2062A /* ContentView.swift */,
+				AF4FE9992505A6F200C2062A /* RestaurantDetailView.swift */,
 				AF4FE95E2505824400C2062A /* Restaurant.swift */,
 				AF4FE9372501473600C2062A /* Assets.xcassets */,
 				AF4FE93C2501473600C2062A /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4FE99A2505A6F200C2062A /* RestaurantDetailView.swift in Sources */,
 				AF4FE9362501473500C2062A /* ContentView.swift in Sources */,
 				AF4FE9342501473500C2062A /* SwiftUIListApp.swift in Sources */,
 				AF4FE95F2505824400C2062A /* Restaurant.swift in Sources */,

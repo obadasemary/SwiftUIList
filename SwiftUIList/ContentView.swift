@@ -34,12 +34,22 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(restaurants.indices) { index in
-            if (0...1).contains(index) {
-                FullImageRow(restaurant: self.restaurants[index])
-            } else {
-                BasicImageRow(restaurant: self.restaurants[index])
+        NavigationView {
+            List(restaurants.indices) { index in
+                NavigationLink(destination: RestaurantDetailView(restaurant: self.restaurants[index])) {
+                    
+                    if (0...1).contains(index) {
+                        FullImageRow(restaurant: self.restaurants[index])
+                    } else {
+                        //                    NavigationLink(
+                        //                        destination: RestaurantDetailView(restaurant: self.restaurants[index])) {
+                        
+                        BasicImageRow(restaurant: self.restaurants[index])
+                        //                    }
+                    }
+                }
             }
+            .navigationBarTitle("Restaurants")
         }
     }
 }
