@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            
+            ForEach(1...10, id: \.self) { index in
+                Text("Item \(index)")
+            }
+        }
     }
 }
 
