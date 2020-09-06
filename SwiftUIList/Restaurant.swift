@@ -9,6 +9,7 @@ import Foundation
 
 struct Restaurant {
     
+    var id = UUID()
     var name: String
     var image: String
 }
