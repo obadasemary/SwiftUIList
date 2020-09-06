@@ -35,7 +35,8 @@ struct ContentView: View {
     
     var body: some View {
         List(restaurants) { restaurant in
-            BasicImageRow(restaurant: restaurant)
+//            BasicImageRow(restaurant: restaurant)
+            FullImageRow(restaurant: restaurant)
         }
     }
 }
@@ -58,6 +59,32 @@ struct BasicImageRow: View {
                 .cornerRadius(5)
             
             Text(restaurant.name)
+        }
+    }
+}
+
+struct FullImageRow: View {
+        
+    var restaurant: Restaurant
+    
+    var body: some View {
+        ZStack {
+            Image(restaurant.image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 200)
+                .cornerRadius(10)
+                .overlay(
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                        .opacity(0.2)
+                )
+            
+            Text(restaurant.name)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.black)
+                .foregroundColor(.white)
         }
     }
 }
