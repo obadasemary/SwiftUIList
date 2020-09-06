@@ -12,5 +12,5 @@
 <img src="https://github.com/obadasemary/SwiftUIList/blob/main/swiftui-list-13.jpg" alt="HTML5 Icon">
 
 <img src="https://github.com/obadasemary/SwiftUIList/blob/NavigationUI/swiftui-navigation-1.jpg" alt="HTML5 Icon">
-<img src="https://github.com/obadasemary/SwiftUIList/blob/NavigationUI/swiftui-navigation-2.png" alt="HTML5 Icon">
+<img src="https://github.com/obadasemary/SwiftUIList/blob/NavigationUI/swiftui-navigation-4.png" alt="HTML5 Icon">
 
