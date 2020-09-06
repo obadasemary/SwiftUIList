@@ -35,14 +35,7 @@ struct ContentView: View {
     
     var body: some View {
         List(restaurants) { restaurant in
-            HStack {
-                Image(restaurant.image)
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .cornerRadius(5)
-                
-                Text(restaurant.name)
-            }
+            BasicImageRow(restaurant: restaurant)
         }
     }
 }
@@ -50,5 +43,21 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct BasicImageRow: View {
+    
+    var restaurant: Restaurant
+    
+    var body: some View {
+        HStack {
+            Image(restaurant.image)
+                .resizable()
+                .frame(width: 40, height: 40)
+                .cornerRadius(5)
+            
+            Text(restaurant.name)
+        }
     }
 }
