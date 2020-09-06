@@ -34,9 +34,12 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(restaurants) { restaurant in
-//            BasicImageRow(restaurant: restaurant)
-            FullImageRow(restaurant: restaurant)
+        List(restaurants.indices) { index in
+            if (0...1).contains(index) {
+                FullImageRow(restaurant: self.restaurants[index])
+            } else {
+                BasicImageRow(restaurant: self.restaurants[index])
+            }
         }
     }
 }
@@ -64,7 +67,7 @@ struct BasicImageRow: View {
 }
 
 struct FullImageRow: View {
-        
+    
     var restaurant: Restaurant
     
     var body: some View {
