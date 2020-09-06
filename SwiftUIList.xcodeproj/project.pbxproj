@@ -13,6 +13,7 @@
 		AF4FE93B2501473600C2062A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4FE93A2501473600C2062A /* Preview Assets.xcassets */; };
 		AF4FE9462501473600C2062A /* SwiftUIListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE9452501473600C2062A /* SwiftUIListTests.swift */; };
 		AF4FE9512501473600C2062A /* SwiftUIListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE9502501473600C2062A /* SwiftUIListUITests.swift */; };
+		AF4FE95F2505824400C2062A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FE95E2505824400C2062A /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		AF4FE94C2501473600C2062A /* SwiftUIListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4FE9502501473600C2062A /* SwiftUIListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListUITests.swift; sourceTree = "<group>"; };
 		AF4FE9522501473600C2062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4FE95E2505824400C2062A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				AF4FE9332501473500C2062A /* SwiftUIListApp.swift */,
 				AF4FE9352501473500C2062A /* ContentView.swift */,
+				AF4FE95E2505824400C2062A /* Restaurant.swift */,
 				AF4FE9372501473600C2062A /* Assets.xcassets */,
 				AF4FE93C2501473600C2062A /* Info.plist */,
 				AF4FE9392501473600C2062A /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				AF4FE9362501473500C2062A /* ContentView.swift in Sources */,
 				AF4FE9342501473500C2062A /* SwiftUIListApp.swift in Sources */,
+				AF4FE95F2505824400C2062A /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
