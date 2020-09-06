@@ -20,7 +20,7 @@ struct ContentView: View {
         Restaurant(name: "Bourke Street Bakery", image: "bourkestreetbakery"),
         Restaurant(name: "Haigh's Chocolate", image: "haighschocolate"),
         Restaurant(name: "Palomino Espresso", image: "palominoespresso"),
-        Restaurant(name: "Homei", image: "upstate"),
+        Restaurant(name: "Upstate", image: "upstate"),
         Restaurant(name: "Traif", image: "traif"),
         Restaurant(name: "Graham Avenue Meats And Deli", image: "grahamavenuemeats"),
         Restaurant(name: "Waffle & Wolf", image: "wafflewolf"),
