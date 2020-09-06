@@ -34,7 +34,7 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(restaurants, id: \.id) { restaurant in
+        List(restaurants) { restaurant in
             HStack {
                 Image(restaurant.image)
                     .resizable()
