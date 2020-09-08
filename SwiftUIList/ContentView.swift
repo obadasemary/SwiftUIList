@@ -20,7 +20,7 @@ struct ContentView: View {
         Restaurant(name: "Bourke Street Bakery", image: "bourkestreetbakery"),
         Restaurant(name: "Haigh's Chocolate", image: "haighschocolate"),
         Restaurant(name: "Palomino Espresso", image: "palominoespresso"),
-        Restaurant(name: "Homei", image: "upstate"),
+        Restaurant(name: "Upstate", image: "upstate"),
         Restaurant(name: "Traif", image: "traif"),
         Restaurant(name: "Graham Avenue Meats And Deli", image: "grahamavenuemeats"),
         Restaurant(name: "Waffle & Wolf", image: "wafflewolf"),
@@ -34,13 +34,31 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(restaurants.indices) { index in
-            if (0...1).contains(index) {
-                FullImageRow(restaurant: self.restaurants[index])
-            } else {
-                BasicImageRow(restaurant: self.restaurants[index])
+        NavigationView {
+            List(restaurants.indices) { index in
+                NavigationLink(destination: RestaurantDetailView(restaurant: self.restaurants[index])) {
+                    if (0...1).contains(index) {
+                        FullImageRow(restaurant: self.restaurants[index])
+                    } else {
+                        BasicImageRow(restaurant: self.restaurants[index])
+                    }
+                }
             }
+            .navigationBarTitle("Restaurants", displayMode: NavigationBarItem.TitleDisplayMode.automatic)
         }
+    }
+    
+    init() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont(name: "ArialRoundedMTBold", size: 35)!]
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont(name: "ArialRoundedMTBold", size: 20)!]
+        navBarAppearance.setBackIndicatorImage(UIImage(systemName: "arrow.turn.up.left"), transitionMaskImage: UIImage(systemName: "arrow.turn.up.left"))
+        
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+        UINavigationBar.appearance().compactAppearance = navBarAppearance
+        
+        UINavigationBar.appearance().tintColor = .black
     }
 }
 
