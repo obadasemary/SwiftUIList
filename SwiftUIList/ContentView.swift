@@ -44,7 +44,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Restaurants")
+            .navigationBarTitle("Restaurants", displayMode: NavigationBarItem.TitleDisplayMode.automatic)
         }
     }
 }
